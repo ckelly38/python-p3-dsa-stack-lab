@@ -44,7 +44,7 @@ class Stack:
                 mremitems.append(self.pop());
                 #print(mremitems);
                 sval = self.search(target);
-                retval = self.search(target) + 1;
+                retval = sval + 1;
                 for item in mremitems: self.push(item);
                 if (sval < 0): return sval;
                 else: return retval;
